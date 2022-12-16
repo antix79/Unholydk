@@ -1,0 +1,53 @@
+
+{
+	"GameCardId":"RLK_824",	
+	"ConfigComment":"Grave strength",	
+
+	"InHandPlayPriority":
+	{
+		"values": 
+		[	
+			{
+				"comment":"*",
+				"condition": "*",
+				"value": "-10",
+			},		
+			{
+				"comment":"*",
+				"condition": "my_minions( count() ) > 3",
+				"value": "100",
+			},
+			
+			{
+				"comment":"*",
+				"condition": "my_minions( count() ) >= 3",
+				"value": "15",
+			},	
+		],
+	},
+
+
+	"BeforePlayCardBonus": 
+	{
+		
+	"values": 
+		[			  
+			{
+				"comment":"*",
+				"condition": "my_minions( count() ) > 3 AND my_minions( count(), tired=false ) > 3",
+				"value": "100",
+			},		
+			{
+				"comment":"*",
+				"condition": "my_minions( count() ) == 3 AND my_minions( count(), tired=false ) == 3",
+				"value": "15",
+			},				
+			{
+				"comment":"*",
+				"condition": "my_minions( count() ) < 3",
+				"value": "-100",
+			},	
+		],
+	},
+}
+  

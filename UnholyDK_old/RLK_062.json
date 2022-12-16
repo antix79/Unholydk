@@ -1,0 +1,21 @@
+
+{
+	"GameCardId":"RLK_062",	
+	"ConfigComment":"Nerubian Swarmguard",	
+	
+	
+	"BeforePlayCardBonus": 
+	{
+		
+	"values": 
+		[	
+			{
+				"comment":"Lose value if we can not summon all two copies",
+				"condition": "my_minions( count() ) > 4",
+				"value": "-1000",
+			},				
+		],
+	},
+		
+}
+  

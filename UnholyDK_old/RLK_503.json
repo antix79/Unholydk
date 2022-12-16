@@ -1,0 +1,35 @@
+
+{
+	"GameCardId":"RLK_503",	
+	"ConfigComment":"Body Bagger",	
+
+	"InHandPlayPriority":
+	{
+		"values": 
+		[
+			{
+				"comment":"gain value on turn one.",
+				"condition": "my_player(count(), max_mana <= 2) > 0",
+				"value": "1000",
+			},	
+		]
+	},
+
+
+
+
+	"BeforePlayCardBonus": 
+	{
+		
+	"values": 
+		[
+			  
+			{
+				"comment":"*",
+				"condition": "*",
+				"value": "100",
+			},
+		],
+	},
+}
+  

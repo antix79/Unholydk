@@ -1,0 +1,27 @@
+
+{
+	"GameCardId":"RLK_061",	
+	"ConfigComment":"Battlefield necro",	
+
+	"BeforePlayCardBonus": 
+	{
+		
+	"values": 
+		[			  
+			{
+				"comment":"Dont play this early",
+				"condition": "my_player(count(), max_mana < 3) > 0",
+				"value": "-100",
+			},
+			
+			
+			{
+				"comment":"Dont play this if we have Nerubian Swarmguard",
+				"condition": "my_minions(count(), cardid=RLK_062) > 0",
+				"value": "-20",
+			},			
+					
+		],
+	},
+}
+  

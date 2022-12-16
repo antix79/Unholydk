@@ -1,0 +1,46 @@
+
+{
+	"GameCardId":"RLK_708",	
+	"ConfigComment":"Chillfallen Baron",	
+
+	"InHandPlayPriority":
+	{
+		"values": 
+		[	
+			{
+				"comment":"*",
+				"condition": "*",
+				"value": "1000",
+			},		
+
+		]
+	},
+	
+	"OnBoardPlayPriority":
+	{
+		"values": 
+		[	
+			{
+				"comment":"*",
+				"condition": "*",
+				"value": "100",
+			},		
+
+		]
+	},
+
+	"BeforePlayCardBonus": 
+	{
+		
+	"values": 
+		[
+			  
+			{
+				"comment": "*",
+				"condition": "*",
+				"value": "100",
+			},
+		],
+	},
+}
+  

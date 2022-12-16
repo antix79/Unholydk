@@ -1,0 +1,42 @@
+
+{
+	"GameCardId":"AV_137",	
+	"ConfigComment":"Irondeep",	
+
+	"InHandPlayPriority":
+	{
+		"values": 
+		[
+			{
+				"comment":"gain value on turn one.",
+				"condition": "my_player(count(), max_mana < 2) > 0",
+				"value": "1000",
+			},	
+		]
+	},
+
+
+
+
+	"BeforePlayCardBonus": 
+	{
+		
+	"values": 
+		[
+			  
+			{
+				"comment":"gain value on turn one.",
+				"condition": "my_player(count(), max_mana < 2) > 0",
+				"value": "1000",
+			},
+			
+			{
+				"comment":"Lose value if we already have one on board",
+				"condition": "my_minions(count(),cardid = AV_137) > 0",
+				"value": "-10",
+			},			
+
+		],
+	},
+}
+  

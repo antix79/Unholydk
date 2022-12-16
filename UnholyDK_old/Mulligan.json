@@ -1,0 +1,31 @@
+﻿{	
+	"GameCardId":"Mulligan",	
+	"ConfigComment":"This is the mulligan rules file.",	
+	
+	"Mulligan": 
+	{
+		"values":
+		[
+			{ 
+				"comment": "To Hold",
+				"mulligan":"RLK_503,RLK_503+RLK_503,AV_137,AV_137+AV_137,RLK_824",
+				"condition": "*",
+				"value":"hold",
+			},
+
+			{ 
+				"comment": "To Hold",
+				"mulligan":"RLK_753+RLK_958, RLK_824+RLK_958",
+				"condition": "*",
+				"value":"hold",
+			},			
+					
+			{ 
+				"comment": "discard all cards not listed as hold",
+				"mulligan":"*",
+				"condition": "*",
+				"value":"discard",
+			},
+		],
+	},
+}

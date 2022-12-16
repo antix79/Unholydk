@@ -1,0 +1,41 @@
+
+{
+	"GameCardId":"RLK_824",	
+	"ConfigComment":"Arms Dealer",	
+
+	"InHandPlayPriority":
+	{
+		"values": 
+		[
+			{
+				"comment":"Gain value once we have more than 2 mana and undeads in hand",
+				"condition": "my_player(count(), max_mana > 2) > 0 AND my_hand( count(), undead=true ) > 0",
+				"value": "200",
+			},	
+		]
+	},
+
+
+	"BeforePlayCardBonus": 
+	{
+		
+	"values": 
+		[
+			  
+			{
+				"comment":"Gain value if we have undeads in hand",
+				"condition": "my_player(count(), max_mana > 2) > 0 AND my_hand( count(), undead=true ) > 0",
+				"value": "100",
+			},
+			
+			{
+				"comment":"Lose value if we have no undeads in hand",
+				"condition": "my_hand( count(), undead=true ) < 1",
+				"value": "-50",
+			},			
+			
+			
+		],
+	},
+}
+  
