@@ -7,18 +7,32 @@
 		"values":
 		[
 			{ 
-				"comment": "To Hold",
-				"mulligan":"RLK_503,RLK_503+RLK_503,AV_137,AV_137+AV_137,RLK_824",
+				"comment": "To hold single good cards",
+				"mulligan":"RLK_824, RLK_503, AV_137, RLK_958, RLK_970",
 				"condition": "*",
 				"value":"hold",
 			},
 
 			{ 
-				"comment": "To Hold",
-				"mulligan":"RLK_753+RLK_958, RLK_824+RLK_958",
+				"comment": "To hold two arms dealer",
+				"mulligan":"RLK_824+RLK_824",
 				"condition": "*",
 				"value":"hold",
-			},			
+			},
+
+			{ 
+				"comment": "To hold banshee with undead for 1 mana",
+				"mulligan":"RLK_957+RLK_824, RLK_957+RLK_503, RLK_957+RLK_833, RLK_957+RLK_958",
+				"condition": "*",
+				"value":"hold",
+			},
+
+			{ 
+				"comment": "To hold egg with arms dealer",
+				"mulligan":"RLK_833+RLK_824",
+				"condition": "*",
+				"value":"hold",
+			},	
 					
 			{ 
 				"comment": "discard all cards not listed as hold",

@@ -1,0 +1,22 @@
+{
+	"GameCardId":"Tactic",	
+	"ConfigComment":"This is the tactic config file.",
+	
+		"AttackOppHeroBonus": 
+	          {
+						  "values":
+						  [
+						  		{						
+						  		  "comment":"bonus to attack opp hero anytime ",  		  
+						  			"condition": "*",
+						  			"value":"10",
+						  		},
+                                {						
+						  		  "comment":"big bonus to attack opp hero if Deathrattle or Miracle rogue (True for 16 dec 2022)",  		  
+						  			"condition": "opp_hero(count(), rogue=true) > 0",
+						  			"value":"200",
+						  		},
+						  ],
+						},					
+		
+}
